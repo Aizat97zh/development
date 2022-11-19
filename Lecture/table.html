@@ -5,8 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
+    <style>
+    table {
+        width: 100%;
+        border: 1px solid rgb(255, 255, 255);
+        border-collapse: collapse;
+     }
+     th {
+        width: 20%;
+        border: 1px solid rgb(99, 205, 75);
+}
+
+    td {
+        width: 20%;
+        border: 1px solid rgb(251, 23, 23);
+}
+     </style>
 </head>
 <body>
-    <table></table>
+    <table>
+        <thead>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>
+        </thead>
+        
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tfoot>
+    </table>
 </body>
 </html>

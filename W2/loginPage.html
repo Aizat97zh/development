@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <style>
+         body{
+            padding: 24px;
+            display: grid;
+            place-content: center;
+        }
+
+        label{
+            display: block;
+            padding-top: 16px; 
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        button{
+            display: block;
+            margin: auto;
+        }
+        
+        h1{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign In</h1>
+    <form method="GET">
+        <label for="email">Your email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="userPassword">Enter your password:</label>
+        <input id="userPassword" type="password">
+
+        <br>
+        <button type="submit" formaction="./mainPage.html">
+        Log me In!</button>
+    </form>
+    </body>
+</html>

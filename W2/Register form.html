@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            padding: 24px;
+            display: grid;
+            place-content: center;
+        }
+
+        label{
+            display: block;
+            padding-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+   <form method="GET">
+    <fieldset>
+        <legend>User Info</legend>
+
+        <label for="username">Name</label>
+        <input type="text" id="username" name="username" 
+        placeholder="fill out username" required>
+
+        <label for="surname">SurName</label>
+        <input type="text" id="surname" name="surname" 
+        placeholder="fill out surname" required>
+
+        <label for="lastname">LastName</label>
+        <input type="text" id="lastname" name="lastname" 
+        placeholder="fill out lastname" required>
+   </fieldset>
+
+   <fieldset>
+        <legend>Gender</legend>
+
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender">
+
+        <label for="Female">Female</label>
+        <input type="radio" id="female" name="gender">
+   </fieldset>
+
+   <fieldset>
+        <legend>Choose which one you want to study</legend>
+        <label for="c++">С++</label>
+        <input type="checkbox" name="c++" id="c++">
+
+        <label for="html">HTML</label>
+        <input type="checkbox" name="html" id="html">
+
+        <label for="css">CSS</label>
+        <input type="checkbox" name="css" id="css">
+
+        <label for="an">Angular</label>
+        <input type="checkbox" name="an" id="an">
+   </fieldset>
+   
+   <fieldset>
+        <legend>Your email address</legend>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+
+        <label for="userPassword">Enter your password:</label>
+        <input id="userPassword" type="password">
+   </fieldset>
+
+   <fieldset>
+        <legend>Your birthday</legend>
+        <label for="start">Choose</label>
+        <input type="date" id="start" name="trip-start">
+   </fieldset>
+
+   <fieldset>
+    <legend>Phone number</legend>
+    <label for="phone">Enter your phone number</label>
+    <input type="tel" id="phone">
+   </fieldset>
+
+    <br>
+    <button type="submit" formaction="./loginPage.html">
+    Register</button>
+ </form> 
+</body>
+</html>
