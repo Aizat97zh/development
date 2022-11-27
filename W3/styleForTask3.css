@@ -1,11 +1,10 @@
 body {
   background-color: darkslategrey;
-  display:grid;
+  display: grid;
   place-content: center;
 }
 
 div.border {
-  /* border: 5px solid darkblue; */
   background-color: rgb(247, 247, 247);
   padding: 10px;
 }
@@ -15,8 +14,8 @@ fieldset {
   margin-top: 10px;
 }
 
-fieldset:first-child{
-    margin-top: 0;
+fieldset:first-child {
+  margin-top: 0;
 }
 
 legend {
@@ -24,48 +23,51 @@ legend {
   /* background-color: azure; */
 }
 
-input[type="text"] {
+.borderInput {
   border: 2px solid rgb(19, 12, 116);
   border-radius: 4px;
 }
 
-input[type="email"] {
-  border: 2px solid rgb(19, 12, 116);
-  border-radius: 4px;
+#borderLog {
+  background-color: rgb(247, 247, 247);
+  padding: 10px;
 }
 
-input[type="password"] {
-  border: 2px solid rgb(19, 12, 116);
-  border-radius: 4px;
+button{
+margin-top: 10px;
 }
 
-input[type="tel"] {
-  border: 2px solid rgb(19, 12, 116);
-  border-radius: 4px;
+tr, td, ul, ol {
+  color: aliceblue;
 }
 
-input[type="date"] {
-  border: 2px solid rgb(19, 12, 116);
-  border-radius: 4px;
+span {
+  background-color: rgb(226, 224, 65);
 }
 
-#bord{
-    background-color: rgb(247, 247, 247);
-    padding: 10px; 
+div > span {
+  background-color: rgb(105, 215, 219);
 }
 
-tr, td, ul, ol{
+ol li:first-of-type + li {
+  color: red;
+}
+
+p{
+    border-left: 2px solid #0083ca; 
+    padding: 1em; 
+    font-size: large;
     color:aliceblue;
 }
-
-span{
-    background-color: rgb(226, 224, 65);
+      
+p::before,
+p::after {
+    content: "“"; 
+    font-size: 40px; 
+    color: #c1172c; 
+    /* line-height: 0;  */
 }
-
-div > span{
-    background-color: rgb(105, 215, 219);
+      
+p::after {
+     content: "”"; 
 }
-
-ol. li:first-child + li {
-    color: red;
-  }
