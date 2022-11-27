@@ -1,0 +1,71 @@
+body {
+  background-color: darkslategrey;
+  display:grid;
+  place-content: center;
+}
+
+div.border {
+  /* border: 5px solid darkblue; */
+  background-color: rgb(247, 247, 247);
+  padding: 10px;
+}
+
+fieldset {
+  display: block;
+  margin-top: 10px;
+}
+
+fieldset:first-child{
+    margin-top: 0;
+}
+
+legend {
+  margin-top: auto;
+  /* background-color: azure; */
+}
+
+input[type="text"] {
+  border: 2px solid rgb(19, 12, 116);
+  border-radius: 4px;
+}
+
+input[type="email"] {
+  border: 2px solid rgb(19, 12, 116);
+  border-radius: 4px;
+}
+
+input[type="password"] {
+  border: 2px solid rgb(19, 12, 116);
+  border-radius: 4px;
+}
+
+input[type="tel"] {
+  border: 2px solid rgb(19, 12, 116);
+  border-radius: 4px;
+}
+
+input[type="date"] {
+  border: 2px solid rgb(19, 12, 116);
+  border-radius: 4px;
+}
+
+#bord{
+    background-color: rgb(247, 247, 247);
+    padding: 10px; 
+}
+
+tr, td, ul, ol{
+    color:aliceblue;
+}
+
+span{
+    background-color: rgb(226, 224, 65);
+}
+
+div > span{
+    background-color: rgb(105, 215, 219);
+}
+
+ol. li:first-child + li {
+    color: red;
+  }
