@@ -1,0 +1,33 @@
+.container{
+    width: 80vw;
+    height: 200px;
+    background-color: aqua;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.item{
+    background-color: burlywood;
+    font-size: 22px;
+    margin: 0.5rem;
+}
+
+.one{
+    flex-grow: 3;
+    flex-shrink: 1;
+    flex-basis: 100px;
+}
+
+.two{
+    flex-grow: 1;
+    flex-shrink: 2;
+    flex-basis: 100px;
+}
+
+.three{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100px;
+}
