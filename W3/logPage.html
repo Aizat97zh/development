@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoginPage</title>
     <style>
-         body{
+        html{
+            height: 100%
+        }
+        
+        body {
             padding: 24px;
             display: grid;
             place-content: center;
+            height: 100%;
         }
 
-        label{
+        label {
             display: block;
-            padding-top: 16px; 
+            padding-top: 16px;
             padding-left: 16px;
             padding-right: 16px;
         }
 
-        button{
+        button {
             display: block;
             margin: auto;
         }
-        
-        h1{
+
+        h1 {
             margin: auto;
         }
     </style>
@@ -32,22 +38,24 @@
     <link rel="stylesheet" type="text/css" href="styleForTask3.css" />
 
 </head>
+
 <body>
     <div id="borderLog">
         <fieldset>
-        <h1 style="color:crimson">Sign In</h1>
-        <form method="GET">
-            <label for="email">Your email:</label>
-            <input class="borderInput" type="email" id="email" name="email">
+            <h1 style="color:crimson">Sign In</h1>
+            <form method="GET">
+                <label for="email">Your email:</label>
+                <input class="borderInput" type="email" id="email" name="email">
 
-            <label for="userPassword">Enter your password:</label>
-            <input class="borderInput" id="userPassword" type="password">
+                <label for="userPassword">Enter your password:</label>
+                <input class="borderInput" id="userPassword" type="password">
 
-            <br>
-            <button class="borderInput" type="submit" formaction="./mainPage1.html" style="color:crimson">
-            Log me In!</button>
-        </form>
+                <br>
+                <button class="borderInput" type="submit" formaction="./mainPage1.html" style="color:crimson">
+                    Log me In!</button>
+            </form>
         </fieldset>
     </div>
 </body>
+
 </html>

@@ -1,7 +1,9 @@
 body {
   background-color: darkslategrey;
   display: grid;
-  place-content: center;
+  color: aliceblue;
+  margin: 0;
+  padding: 0;
 }
 
 div.border {
@@ -10,6 +12,7 @@ div.border {
 }
 
 fieldset {
+  border-color:darkorange;
   display: block;
   margin-top: 10px;
 }
@@ -20,12 +23,13 @@ fieldset:first-child {
 
 legend {
   margin-top: auto;
-  /* background-color: azure; */
 }
 
 .borderInput {
-  border: 2px solid rgb(19, 12, 116);
+  padding: 20px;
+  border: 2px solid ;
   border-radius: 4px;
+  font-size: 30px;
 }
 
 #borderLog {
@@ -65,9 +69,124 @@ p::after {
     content: "“"; 
     font-size: 40px; 
     color: #c1172c; 
-    /* line-height: 0;  */
 }
       
 p::after {
      content: "”"; 
 }
+
+h1{
+  color:aliceblue;
+}
+
+/* Task 4 Styles START */
+header{
+  height: 48px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+main{
+  margin-top: 48px;
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 148px);
+  }
+
+.side-bar {
+  height: 100%;
+  width: 20%;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+  overflow: auto;
+}
+
+.side-bar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.side-bar a.active {
+  top: 0;
+  background-color: #04AA6D;
+  color: white;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.side-bar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+img { 
+  width: auto;
+  height: auto;
+  padding-bottom: 20px;
+  display: block;
+}
+
+#content {
+  width: 80%;
+  padding: 20px 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  overflow: auto;
+  position: relative;
+}
+
+div.fixed {
+  position: fixed;
+  bottom: 110px;
+  right: 0;
+  width: 300px;
+  border: 3px solid #161616;
+  color: rgb(255, 20, 20);
+}
+
+footer{
+  height: 100px;
+  width: 100%;
+  background-color: #333;
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: rgb(102, 7, 66);
+    color: white;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+    color: white;
+  }}
