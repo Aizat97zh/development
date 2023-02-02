@@ -1,0 +1,23 @@
+body {
+    padding: 20px;
+    margin: 0;
+}
+
+.upload-file-zone{
+    display: flex;
+}
+
+#btn{
+    margin: 0 auto;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#files-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
