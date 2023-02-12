@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #444444;
+    font-family: 'Roboto Slab', sans-serif;
+    line-height: 1.6;
+    font-size: 90%;
+  }
+  
+  .row {
+    display: flex; /* включение технологии flexbox */
+    flex-direction: row; /* колонки в ряду */
+    justify-content: start; /* колонки в центре контейнера */
+    flex-wrap: wrap; /* держать колонки в ряду */
+    margin: 20px;
+  }
+  
+  .column {
+    display: flex;  /* одинаковая высота колонок */ 
+    width: 33.33%; /* ширина одной колонки */
+    padding: 5px;
+  }
+  
+  .card {
+    border: 1px solid #efefef;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    transition: all .3s ease;
+    padding: 20px 0;
+  }
+  
+  .card:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .card-content {
+    padding: 0 20px;
+  }
+  
+  a {
+    color: #444444;
+    text-decoration: none;
+    transition: all .3s ease; 
+  }
+  
+  .card h2 {
+    padding-top: 10px;
+    color: #f76270;
+    font-size: 130%;
+    line-height: 1.2;
+    height: 64px;
+  }
+  
+  .card p {
+    margin: 5px 0 30px;
+    color: #666666;
+      
+  }
+  
+  .button {
+    display: block;
+    background: #a7c1cf;
+    padding: 10px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+   }
+   
+   .button:hover, .button:focus {
+      background: #f76270;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .row {
+    flex-direction: column; /* в ряду останется одна колонка */ 
+      flex-wrap: wrap; /* разрешен перенос колонок */
+  }
+    .column {
+      width: 100%; /* новая ширина колонки */
+      margin-bottom: 20px;
+    }
+  }
