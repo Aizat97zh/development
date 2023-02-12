@@ -4,15 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aizat's Posts</title>
+    <title>Post Detail</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <div id="post-list" class="row">
+    <div class="post-detail">
+      <a class="button" href="./index.html"> Назад</a>
+      <h2 id="post-title"></h2>
+      <p id="post-body"></p>
+
+      <div id="comment-list">
+        <p>Загрузка...</p>
+      </div>
     </div>
+
     <script src="scripts.js"></script>
     <script>
-      getPostList();
+      getPostDetails();
     </script>
   </body>
 </html>
