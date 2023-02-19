@@ -1,0 +1,15 @@
+<div class="title-container">
+  <span class="back-btn" (click)="goBack()">{{ "<-Back" }}</span>
+  <h1>{{ post?.title }}</h1>
+</div>
+<p>{{ post?.body }}</p>
+
+<h2>Comments:</h2>
+
+<div>
+  <div class="comment" *ngFor="let comment of comments">
+    <span class="name">{{ comment?.name }}</span>
+    <span class="email">{{ comment?.email }}</span>
+    <p>{{ comment?.body }}</p>
+  </div>
+</div>
